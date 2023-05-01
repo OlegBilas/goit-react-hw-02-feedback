@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StatTitle, Facts } from './Statistics.styled';
+import { Facts } from './Statistics.styled';
 
 export const Statistics = ({
   good,
@@ -11,7 +11,6 @@ export const Statistics = ({
 }) => {
   return (
     <>
-      <StatTitle>Statistics</StatTitle>
       <Facts>Good: {good}</Facts>
       <Facts>Neutral: {neutral}</Facts>
       <Facts>Bad: {bad}</Facts>
