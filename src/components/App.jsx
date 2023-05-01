@@ -21,10 +21,10 @@ export class App extends Component {
     }));
   };
 
-  countTotalFeedback = () => {
+  countTotalFeedback() {
     const { good, neutral, bad } = this.state;
     return good + neutral + bad;
-  };
+  }
 
   countPositiveFeedbackPercentage() {
     return Math.round((this.state.good / this.countTotalFeedback()) * 100);
